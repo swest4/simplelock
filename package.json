@@ -1,0 +1,14 @@
+{
+  "name": "simplelock",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "seamapi": "^8.11.0"
+  }
+}
