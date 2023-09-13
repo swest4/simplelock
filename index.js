@@ -11,7 +11,7 @@ console.log(lockId);
 const unlock = async () => {
   const attempt = await seam.locks.unlockDoor(lockId);
   console.log(attempt);
-  if (attempt.action_attempt.status === 'success') {
+  if (attempt.actionAttempt.status === 'success') {
     exec('termux-toast "Door unlocked"');
   }
   process.exit();
@@ -20,7 +20,7 @@ const unlock = async () => {
 const lock = async () => {
   const attempt = await seam.locks.lockDoor(lockId);
   console.log(attempt);
-  if (attempt.action_attempt.status === 'success') {
+  if (attempt.actionAttempt.status === 'success') {
     exec('termux-toast "Door locked"');
   }
   process.exit();
